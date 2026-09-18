@@ -127,8 +127,8 @@ Choose a failure scenario in the dashboard and reset before the next call. Every
 ## Checks
 
 ```sh
-(cd backend && .venv/bin/python -B -m pytest -q -p no:cacheprovider)
 npm --prefix frontend run build
+(cd backend && .venv/bin/python -B -m pytest -q -p no:cacheprovider)
 ```
 
 The automated suite uses mocked model responses and signed local Twilio fixtures. It checks tool validation, scoped context, multiple routes, approval, stale inventory, interruption, failures, and transport behavior. GitHub Actions runs the tests and frontend build without provider credentials.
