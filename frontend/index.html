@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      JEFF | Airline Recovery Voice Agent
+    </title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <strong>
+        JEFF
+      </strong>
+      <div>
+        VOICE AGENT
+        <span class="dot">
+        </span>
+        <span id="connection">
+          Connecting
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <div>
+          <p class="eyebrow">
+            INTELLIGENT DISRUPTION RECOVERY
+          </p>
+          <h1>
+            A way home, tonight.
+          </h1>
+          <p>
+            One recovery agent. Multiple reservations. Human help when it matters.
+          </p>
+        </div>
+        <div class="mode" id="mode">
+          Connecting to voice agent…
+        </div>
+      </div>
+      <div class="layout">
+        <section class="trip">
+          <div class="sectionhead">
+            <h2>
+              Your trip
+            </h2>
+            <span id="status" class="status">
+              CANCELLED
+            </span>
+          </div>
+          <div class="route">
+            <div>
+              <b id="origin">
+                —
+              </b>
+              <span id="origin-name">
+                —
+              </span>
+            </div>
+            <div class="route-line">
+              ✈
+            </div>
+            <div>
+              <b id="destination">
+                —
+              </b>
+              <span id="destination-name">
+                —
+              </span>
+            </div>
+          </div>
+          <div class="details">
+            <div>
+              <label>
+                PASSENGER
+              </label>
+              <strong id="passenger">
+                —
+              </strong>
+            </div>
+            <div>
+              <label>
+                RESERVATION
+              </label>
+              <strong id="confirmation">
+                —
+              </strong>
+            </div>
+            <div>
+              <label>
+                FLIGHT
+              </label>
+              <strong id="flight">
+                —
+              </strong>
+            </div>
+            <div>
+              <label>
+                DEPARTURE
+              </label>
+              <strong id="departure">
+                —
+              </strong>
+            </div>
+            <div>
+              <label>
+                SEAT
+              </label>
+              <strong id="seat">
+                —
+              </strong>
+            </div>
+            <div>
+              <label>
+                TRAVEL DATE
+              </label>
+              <strong id="travel-date">
+                —
+              </strong>
+            </div>
+          </div>
+          <p class="fine" id="trip-note">
+            Fictional inventory and reservation data.
+          </p>
+          <div id="result" class="result">
+            Loading your trip…
+          </div>
+          <p id="preferences" class="fine"></p>
+          <div id="options">
+          </div>
+        </section>
+        <section class="conversation">
+          <div class="sectionhead">
+            <h2>
+              Recovery conversation
+            </h2>
+            <span id="stage">
+              Ready
+            </span>
+          </div>
+          <div id="messages" class="messages" aria-live="polite">
+            <p class="empty">
+              Ask to find alternative flights.
+              <br>
+              The agent will check alternatives before making a change.
+            </p>
+          </div>
+          <div class="quick">
+            <button id="find-alternatives">
+              Find alternatives
+            </button>
+            <button data-text="I need a human agent">
+              Request a human
+            </button>
+          </div>
+          <form id="chat">
+            <label class="sr" for="message">
+              Your message
+            </label>
+            <input id="message" autocomplete="off" placeholder="Find alternative flights…" maxlength="1500" required>
+            <button class="primary">
+              Send
+            </button>
+          </form>
+          <p id="error" role="alert">
+          </p>
+        </section>
+      </div>
+      <section class="activity">
+        <div class="sectionhead">
+          <h2>
+            Agent activity
+          </h2>
+          <span>
+            Reservation changes come from the booking service
+          </span>
+        </div>
+        <ol id="events">
+          <li>
+            No actions yet
+          </li>
+        </ol>
+      </section>
+      <footer>
+        <div class="demo-cases">
+          <label for="demo-reservation">Demo reservation</label>
+          <select id="demo-reservation" aria-label="Demo reservation"></select>
+          <button id="load-reservation">Load reservation</button>
+        </div>
+        <div>
+          <label for="scenario">
+            Test scenario
+          </label>
+          <select id="scenario">
+            <option value="normal">
+              Routine recovery
+            </option>
+            <option value="no-seats">
+              No available seats
+            </option>
+            <option value="sold-out">
+              Seat sells out at confirmation
+            </option>
+            <option value="api-error">
+              Service unavailable
+            </option>
+          </select>
+          <button id="reset">
+            Reset demo
+          </button>
+        </div>
+        <p>
+          Fictional airline data. No real bookings, SMS, or live agent transfers.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="/main.js">
+    </script>
+  </body>
+</html>

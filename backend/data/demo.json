@@ -1,0 +1,249 @@
+{
+  "demo_now": "2026-09-18T17:00:00-04:00",
+  "policy": {
+    "minimum_lead_minutes": 30,
+    "same_day_only": true,
+    "additional_fare": 0
+  },
+  "airports": {
+    "IAD": {
+      "name": "Washington Dulles",
+      "timezone": "America/New_York"
+    },
+    "ATL": {
+      "name": "Atlanta",
+      "timezone": "America/New_York"
+    },
+    "JFK": {
+      "name": "New York JFK",
+      "timezone": "America/New_York"
+    },
+    "BOS": {
+      "name": "Boston",
+      "timezone": "America/New_York"
+    },
+    "ORD": {
+      "name": "Chicago O\u2019Hare",
+      "timezone": "America/Chicago"
+    }
+  },
+  "passengers": [
+    {
+      "id": "P1",
+      "name": "Sam Taylor"
+    },
+    {
+      "id": "P2",
+      "name": "Alex Morgan"
+    },
+    {
+      "id": "P3",
+      "name": "Jordan Lee"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "R1",
+      "confirmation": "XK72LP",
+      "passenger_id": "P1",
+      "flight_id": "F1",
+      "seat": "14A",
+      "status": "DISRUPTED"
+    },
+    {
+      "id": "R2",
+      "confirmation": "BOS842",
+      "passenger_id": "P2",
+      "flight_id": "F4",
+      "seat": "12C",
+      "status": "DISRUPTED"
+    },
+    {
+      "id": "R3",
+      "confirmation": "ORD631",
+      "passenger_id": "P3",
+      "flight_id": "F7",
+      "seat": "20A",
+      "status": "DISRUPTED"
+    }
+  ],
+  "flights": [
+    {
+      "id": "F1",
+      "number": "DL1847",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T18:00:00-04:00",
+      "arrival_at": "2026-09-18T19:40:00-04:00",
+      "status": "CANCELLED",
+      "seats": []
+    },
+    {
+      "id": "F2",
+      "number": "DL2219",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T19:10:00-04:00",
+      "arrival_at": "2026-09-18T20:48:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "14A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "number": "DL2285",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T21:00:00-04:00",
+      "arrival_at": "2026-09-18T22:40:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "18C",
+          "type": "aisle"
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "number": "DL410",
+      "origin": "JFK",
+      "destination": "BOS",
+      "departure_at": "2026-09-18T18:30:00-04:00",
+      "arrival_at": "2026-09-18T19:45:00-04:00",
+      "status": "CANCELLED",
+      "seats": []
+    },
+    {
+      "id": "F5",
+      "number": "DL512",
+      "origin": "JFK",
+      "destination": "BOS",
+      "departure_at": "2026-09-18T19:00:00-04:00",
+      "arrival_at": "2026-09-18T20:15:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "12C",
+          "type": "aisle"
+        }
+      ]
+    },
+    {
+      "id": "F6",
+      "number": "DL618",
+      "origin": "JFK",
+      "destination": "BOS",
+      "departure_at": "2026-09-18T20:30:00-04:00",
+      "arrival_at": "2026-09-18T21:45:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "9A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F7",
+      "number": "DL730",
+      "origin": "JFK",
+      "destination": "ORD",
+      "departure_at": "2026-09-18T19:00:00-04:00",
+      "arrival_at": "2026-09-18T21:00:00-04:00",
+      "status": "DELAYED",
+      "seats": []
+    },
+    {
+      "id": "F8",
+      "number": "DL888",
+      "origin": "IAD",
+      "destination": "BOS",
+      "departure_at": "2026-09-18T19:30:00-04:00",
+      "arrival_at": "2026-09-18T21:00:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "14A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F9",
+      "number": "DL889",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T20:00:00-04:00",
+      "arrival_at": "2026-09-18T21:40:00-04:00",
+      "status": "CANCELLED",
+      "seats": [
+        {
+          "number": "14A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "number": "DL890",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-19T22:00:00-04:00",
+      "arrival_at": "2026-09-19T23:40:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "14A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "number": "DL891",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T17:10:00-04:00",
+      "arrival_at": "2026-09-18T18:50:00-04:00",
+      "status": "SCHEDULED",
+      "seats": [
+        {
+          "number": "14A",
+          "type": "window"
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "number": "DL892",
+      "origin": "IAD",
+      "destination": "ATL",
+      "departure_at": "2026-09-18T20:00:00-04:00",
+      "arrival_at": "2026-09-18T21:40:00-04:00",
+      "status": "SCHEDULED",
+      "seats": []
+    }
+  ],
+  "disruptions": [
+    {
+      "flight_id": "F1",
+      "type": "cancellation",
+      "reason": "Aircraft unavailable"
+    },
+    {
+      "flight_id": "F4",
+      "type": "cancellation",
+      "reason": "Crew unavailable"
+    },
+    {
+      "flight_id": "F7",
+      "type": "delay",
+      "reason": "Weather delay"
+    }
+  ]
+}
